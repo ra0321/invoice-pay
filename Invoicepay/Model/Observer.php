@@ -23,8 +23,7 @@ class Pro_Invoicepay_Model_Observer
                     
                     $pdf = Mage::getModel('sales/order_pdf_invoice')->getPdf(array($invoice), $from);
                     
-                    file_put_contents($this->pdf_path, $pdf->render());
-                    
+                    file_put_contents($this->pdf_path, $pdf->render());                    
                     shell_exec('lp ' . $this->pdf_path);
                 }
             }
