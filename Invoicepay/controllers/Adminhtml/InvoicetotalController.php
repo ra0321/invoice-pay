@@ -24,7 +24,7 @@ class Pro_Invoicepay_Adminhtml_InvoicetotalController extends Mage_Adminhtml_Con
         return $invoice;
     }
     
-    public function editAction()
+/*    public function editAction()
     {
         $invoice = $this->_initInvoice();
         
@@ -35,7 +35,7 @@ class Pro_Invoicepay_Adminhtml_InvoicetotalController extends Mage_Adminhtml_Con
         else {
             $this->_forward('noRoute');
         }
-    }
+    }*/
     
     public function saveAction()
     {

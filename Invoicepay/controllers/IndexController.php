@@ -31,8 +31,8 @@ class Pro_Invoicepay_IndexController extends Mage_Core_Controller_Front_Action
             $payment = $quote->getPayment();
             $payment->importData($data);
             $payment->setOrder($order);
-            //$methodInstance = $payment->getMethodInstance();
-//            $methodInstance->setStore($order->getStoreId())->capture($payment, $order->getGrandTotal());
+            $methodInstance = $payment->getMethodInstance();
+            $methodInstance->setStore($order->getStoreId())->capture($payment, $order->getGrandTotal());
             
             $invoice->setState(2)->save();
             
