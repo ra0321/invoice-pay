@@ -13,7 +13,7 @@ class Pro_Invoicepay_IndexController extends Mage_Core_Controller_Front_Action
         $this->renderLayout();
     }
     
-    public function payAction()
+    /*public function payAction()
     {
         try {
             $order_id = $this->getRequest()->getParam('order_id');        
@@ -44,5 +44,5 @@ class Pro_Invoicepay_IndexController extends Mage_Core_Controller_Front_Action
         }
 
         $this->getResponse()->setBody(Mage::helper('core')->jsonEncode($result));
-    }
+    }*/
 }
